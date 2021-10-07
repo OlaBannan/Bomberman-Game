@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Back.h" />
+    <ClInclude Include="Bomb.h" />
+    <ClInclude Include="Brick.h" />
+    <ClInclude Include="Buttons.h" />
+    <ClInclude Include="Collision.h" />
+    <ClInclude Include="Controller.h" />
+    <ClInclude Include="Door.h" />
+    <ClInclude Include="EmptyCell.h" />
+    <ClInclude Include="Enemy.h" />
+    <ClInclude Include="Flame.h" />
+    <ClInclude Include="GiftUnderBrick.h" />
+    <ClInclude Include="Help.h" />
+    <ClInclude Include="Quit.h" />
+    <ClInclude Include="QuitGame.h" />
+    <ClInclude Include="REnemyFlameColl.h" />
+    <ClInclude Include="RobotBrickColl.h" />
+    <ClInclude Include="RobotDoorColl.h" />
+    <ClInclude Include="RobotFlameColl.h" />
+    <ClInclude Include="RobotREnemyColl.h" />
+    <ClInclude Include="RobotSEnemyColl.h" />
+    <ClInclude Include="RobotWallColl.h" />
+    <ClInclude Include="SEnemyFlameColl.h" />
+    <ClInclude Include="SEnemyRobotColl.h" />
+    <ClInclude Include="GameBoard.h" />
+    <ClInclude Include="GameObject.h" />
+    <ClInclude Include="Gift.h" />
+    <ClInclude Include="macros.h" />
+    <ClInclude Include="Moveable.h" />
+    <ClInclude Include="MoveCollision.h" />
+    <ClInclude Include="RandomEnemy.h" />
+    <ClInclude Include="REnemyRobotColl.h" />
+    <ClInclude Include="Robot.h" />
+    <ClInclude Include="RobotEmptyColl.h" />
+    <ClInclude Include="RobotGiftColl.h" />
+    <ClInclude Include="SmartEnemy.h" />
+    <ClInclude Include="Start.h" />
+    <ClInclude Include="Texture.h" />
+    <ClInclude Include="UnMoveable.h" />
+    <ClInclude Include="UnmoveCollison.h" />
+    <ClInclude Include="Wall.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Back.cpp" />
+    <ClCompile Include="Bomb.cpp" />
+    <ClCompile Include="Brick.cpp" />
+    <ClCompile Include="Buttons.cpp" />
+    <ClCompile Include="Collision.cpp" />
+    <ClCompile Include="Controller.cpp" />
+    <ClCompile Include="Door.cpp" />
+    <ClCompile Include="EmptyCell.cpp" />
+    <ClCompile Include="Enemy.cpp" />
+    <ClCompile Include="Flame.cpp" />
+    <ClCompile Include="GiftUnderBrick.cpp" />
+    <ClCompile Include="Help.cpp" />
+    <ClCompile Include="Quit.cpp" />
+    <ClCompile Include="QuitGame.cpp" />
+    <ClCompile Include="REnemyFlameColl.cpp" />
+    <ClCompile Include="RobotBrickColl.cpp" />
+    <ClCompile Include="RobotDoorColl.cpp" />
+    <ClCompile Include="RobotFlameColl.cpp" />
+    <ClCompile Include="RobotREnemyColl.cpp" />
+    <ClCompile Include="RobotSEnemyColl.cpp" />
+    <ClCompile Include="RobotWallColl.cpp" />
+    <ClCompile Include="SEnemyFlameColl.cpp" />
+    <ClCompile Include="SEnemyRobotColl.cpp" />
+    <ClCompile Include="GameBoard.cpp" />
+    <ClCompile Include="GameObject.cpp" />
+    <ClCompile Include="Gift.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Moveable.cpp" />
+    <ClCompile Include="MoveCollision.cpp" />
+    <ClCompile Include="RandomEnemy.cpp" />
+    <ClCompile Include="REnemyRobotColl.cpp" />
+    <ClCompile Include="Robot.cpp" />
+    <ClCompile Include="RobotEmptyColl.cpp" />
+    <ClCompile Include="RobotGiftColl.cpp" />
+    <ClCompile Include="SmartEnemy.cpp" />
+    <ClCompile Include="Start.cpp" />
+    <ClCompile Include="Texture.cpp" />
+    <ClCompile Include="UnMoveable.cpp" />
+    <ClCompile Include="UnmoveCollison.cpp" />
+    <ClCompile Include="Wall.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="README.txt" />
+    <Text Include="stage1.txt" />
+    <Text Include="stage2.txt" />
+    <Text Include="stage3.txt" />
+    <Text Include="stage4.txt" />
+    <Text Include="stage5.txt" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{4A9B8399-3B6A-40F2-934A-6E0DD9CD9005}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Bomberman</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
