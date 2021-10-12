@@ -1,4 +1,6 @@
-# Bomberman-Game
+# 🔰 Bomberman-Game 🔰
+[![](https://img.shields.io/badge/author-@OlaBannan-blue.svg?style=flat)](www.linkedin.com/in/ola-bannan-98a667175)
+
 A simulation of the Bomber-man game using C++11, SFML media lib, and Object-Oriented concepts.
 In this projet I implemented the Bomberman game with inheritance realization and polymorphism as well as use the SFML graphics library.
 
